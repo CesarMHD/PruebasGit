@@ -1,0 +1,53 @@
+git init
+	Iniciar el proyecto/ crear un nuevo repositorio
+
+git status
+	Ver el estado de nuestro proyecto
+
+git add (Nombre del archivo aqui)
+	Agregar un archivo al repositorio
+
+	Con solo poner "." en lugar del nombre, se agregan todos los archivos
+
+git commit -m "Un mensaje cualquiera"
+	Confirmar la agregacion, subir al repositorio y cerrar esa version del proyecto
+
+git rm --cached (Nombre del archivo aqui)
+	Eliminar las agregaciones/modificaciones subidas al repositorio (regresar)
+
+git log
+	Permite ver el historial de "commit" que se realizaron en el repositorio
+
+git log --stat
+	Ver mas a detalle el historial de "commit" realizados
+
+git log --oneline
+	Ver el numero para el acceso a los "commit" realizados
+
+git checkout (codigo del commit o nombre de la rama)
+	Permite volver al commit especificado
+	Tambien sirve para cambiar de ramas
+
+git checkout -b (Nombre de la rama)
+	Crear una rama
+
+git branch
+	Permite mostrar cuantas ramas tenemos
+
+git merge (nombre de la rama)
+	Une las ramas
+
+git branch -d (nombre de la rama)
+	Elimina la rama especificada
+
+
+Al crear un archivo ".gitignore", hara que git ignore y no tome en cuenta al momento de subir al repositorio
+
+Subir a github
+
+git init
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com: "Repositorio"
+git push -u origin main
+	
